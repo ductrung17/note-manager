@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "38738038916",
+    "project_id": "note-manager-cd269",
+    "storage_bucket": "note-manager-cd269.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38738038916:android:3443feb58a742bcff5b2d1",
+        "android_client_info": {
+          "package_name": "com.example.flutter_note_manager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_Qv7jU86895QSKwFd7nqOScCie9iUwFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
