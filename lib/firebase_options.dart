@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
-import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform, kIsWeb;
+import 'package:flutter/foundation.dart'
+    show defaultTargetPlatform, TargetPlatform, kIsWeb;
 
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
@@ -21,35 +22,35 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyB_Qv7jU86895QSKwFd7nqOScCie9iUwFE',
-    appId: '1:38738038916:web:dummywebappid', // Dummy vì bạn chưa tạo web app
-    messagingSenderId: '38738038916',
-    projectId: 'note-manager-cd269',
-    storageBucket: 'note-manager-cd269.firebasestorage.app',
+    apiKey: String.fromEnvironment('FIREBASE_WEB_API_KEY'),
+    appId: String.fromEnvironment('FIREBASE_WEB_APP_ID'),
+    messagingSenderId: String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: String.fromEnvironment('FIREBASE_PROJECT_ID'),
+    storageBucket: String.fromEnvironment('FIREBASE_STORAGE_BUCKET'),
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB_Qv7jU86895QSKwFd7nqOScCie9iUwFE',
-    appId: '1:38738038916:android:3443feb58a742bcff5b2d1',
-    messagingSenderId: '38738038916',
-    projectId: 'note-manager-cd269',
-    storageBucket: 'note-manager-cd269.firebasestorage.app',
+    apiKey: String.fromEnvironment('FIREBASE_ANDROID_API_KEY'),
+    appId: String.fromEnvironment('FIREBASE_ANDROID_APP_ID'),
+    messagingSenderId: String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: String.fromEnvironment('FIREBASE_PROJECT_ID'),
+    storageBucket: String.fromEnvironment('FIREBASE_STORAGE_BUCKET'),
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB_Qv7jU86895QSKwFd7nqOScCie9iUwFE',
-    appId: '1:38738038916:ios:dummyiosappid', // Dummy vì bạn chưa tạo iOS app
-    messagingSenderId: '38738038916',
-    projectId: 'note-manager-cd269',
-    storageBucket: 'note-manager-cd269.firebasestorage.app',
-    iosBundleId: 'com.example.flutterNoteManager', // placeholder nếu sau này làm iOS
+    apiKey: String.fromEnvironment('FIREBASE_IOS_API_KEY'),
+    appId: String.fromEnvironment('FIREBASE_IOS_APP_ID'),
+    messagingSenderId: String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: String.fromEnvironment('FIREBASE_PROJECT_ID'),
+    storageBucket: String.fromEnvironment('FIREBASE_STORAGE_BUCKET'),
+    iosBundleId: String.fromEnvironment('FIREBASE_IOS_BUNDLE_ID'),
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyB_Qv7jU86895QSKwFd7nqOScCie9iUwFE',
-    appId: '1:38738038916:macos:dummymacosappid', // Dummy vì bạn chưa tạo macOS app
-    messagingSenderId: '38738038916',
-    projectId: 'note-manager-cd269',
-    storageBucket: 'note-manager-cd269.firebasestorage.app',
+    apiKey: String.fromEnvironment('FIREBASE_MACOS_API_KEY'),
+    appId: String.fromEnvironment('FIREBASE_MACOS_APP_ID'),
+    messagingSenderId: String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: String.fromEnvironment('FIREBASE_PROJECT_ID'),
+    storageBucket: String.fromEnvironment('FIREBASE_STORAGE_BUCKET'),
   );
 }
